@@ -1,0 +1,51 @@
+﻿<?xml version='1.0'?>
+<!DOCTYPE bookinfo PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "SIP_Balancer_User_Guide.ent">
+%BOOK_ENTITIES;
+]><!-- chapter id nickname: sssug -->
+<bookinfo id="SIP_Load_Balancer_User_Guide">
+	<title>SIP Load Balancer User Guide</title>
+	<subtitle>The Guide to the &PLATFORM_NAME; SIP Load Balancer</subtitle>
+    <productname>&PLATFORM_NAME; Platform</productname>
+	<productnumber>&VERSION;</productnumber>
+	<edition>2.0</edition>
+	<pubsnumber>1</pubsnumber>
+	<abstract>
+		<para>&PLATFORM_NAME; is the first and only open source <acronym>VoIP</acronym> platform certified for <acronym>JAIN SLEE</acronym> 1.1 and <acronym>SIP</acronym> Servlets 1.1 compliance. &PLATFORM_NAME; SIP Load Balancer is a SIP, HTTP and SMPP Load Balancer to be used in a &PLATFORM_NAME; platform cluster, to increase SIP, HTTP and SMPP performance, and achieve High Availability and Fault Tolerance on those protocols.</para>
+	</abstract>
+	<corpauthor>
+		<inlinemediaobject>
+			<imageobject>
+				<imagedata
+					format="SVG"
+					fileref="Common_Content/images/title_logo.svg" />
+			</imageobject>
+			<textobject>
+				<phrase>Logo</phrase>
+			</textobject>
+		</inlinemediaobject>
+	</corpauthor>
+	<copyright>
+		<year>&YEAR;</year>
+		<holder>TeleStax, Inc.</holder>
+	</copyright>
+	<!--ORIGINAL:
+	<xi:include
+		href="Common_Content/Legal_Notice.xml"
+		xmlns:xi="http://www.w3.org/2001/XInclude" />-->
+	<!--FOR JDOCBOOK:-->
+	<!--<xi:include
+		xmlns:xi="http://www.w3.org/2001/XInclude"
+		href="Common_Content/Legal_Notice.xml">
+		<xi:fallback
+			xmlns:xi="http://www.w3.org/2001/XInclude">
+			<xi:include
+				href="fallback_content/Legal_Notice.xml"
+				xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+		</xi:fallback>
+	</xi:include>-->
+	<xi:include href="Author_Group.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+</bookinfo>
+
+
+

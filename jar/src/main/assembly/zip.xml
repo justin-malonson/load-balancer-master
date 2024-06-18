@@ -1,0 +1,39 @@
+<assembly>
+  <id>zip</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <fileSets>
+  <fileSet>
+    <directory>${basedir}/target</directory>
+    <outputDirectory>/</outputDirectory>
+    <includes>
+      <include>*jar-with-dependencies*.jar</include>
+    </includes>
+  </fileSet>
+  <fileSet>
+    <directory>${basedir}/../docs/sources-asciidoc/target/generated-docs/pdf</directory>
+    <outputDirectory>/docs</outputDirectory>
+    <includes>
+      <include>Load_Balancer_User_Guide.pdf</include>
+    </includes>
+  </fileSet>
+    <fileSet>
+    <directory>${basedir}/../docs/sources-asciidoc/target/generated-docs/html-book</directory>
+    <outputDirectory>/docs/html-book</outputDirectory>
+    <includes>
+      <include>*</include>
+    </includes>
+  </fileSet>
+  <fileSet>
+    <directory>${basedir}/src/test/resources</directory>
+    <outputDirectory>/</outputDirectory>
+    <includes>
+      <include>lb-configuration.xml</include>
+      <include>lb-log4j.xml</include>
+    </includes>
+  </fileSet>
+
+  </fileSets>
+  <includeBaseDirectory>true</includeBaseDirectory>
+</assembly>

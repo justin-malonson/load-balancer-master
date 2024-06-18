@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>org.mobicents.tools</groupId>
+		<artifactId>sip-balancer</artifactId>
+		<version>10.1.0-SNAPSHOT</version>		
+	</parent>
+	
+	<artifactId>sip-balancer-docs</artifactId>	
+	<packaging>pom</packaging>
+
+	<name>Restcomm Converged Load Balancer Docs</name>
+	<description>Restcomm Converged Load Balancer Docs</description>
+	<url>https://github.com/Mobicents/load-balancer</url>
+	
+	<modules>
+		<module>sources-asciidoc</module>
+	</modules>
+
+	<profiles>
+		<profile>
+			<id>all</id>
+			<!--
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			-->
+			<modules>
+				<module>sources-asciidoc</module>
+				<!--module>sources-mobicents</module>
+				<module>sources-telscale</module>
+				<module>jdocbook-mobicents</module>
+				<module>jdocbook-telscale</module-->
+			</modules>
+		</profile>
+		<!--profile>
+			<id>mobicents</id>			
+			<modules>
+				<module>sources-mobicents</module>
+				<module>jdocbook-mobicents</module>				
+			</modules>
+		</profile>
+		<profile>
+			<id>telscale</id>
+			<modules>
+				<module>sources-telscale</module>
+				<module>jdocbook-telscale</module>
+			</modules>
+		</profile-->
+	</profiles>
+
+</project>
